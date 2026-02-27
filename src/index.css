@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens for pickup.
+ *
+ * Primary green — sporty, energetic, not the usual SaaS blue/purple.
+ * Surface grays from Tailwind's Slate palette for text and backgrounds.
+ *
+ * Fonts:
+ *   Bricolage Grotesque — headings. Distinctive, slightly playful.
+ *   DM Sans — body text. Clean and readable on mobile.
+ *   Both loaded from Google Fonts in index.html.
+ */
+
+@theme {
+  --font-display: "Bricolage Grotesque", sans-serif;
+  --font-body: "DM Sans", sans-serif;
+
+  --color-primary-50: #eefbf3;
+  --color-primary-100: #d6f5e0;
+  --color-primary-200: #b0eac6;
+  --color-primary-300: #7cd9a5;
+  --color-primary-400: #45c17e;
+  --color-primary-500: #22a663;
+  --color-primary-600: #15864f;
+  --color-primary-700: #116b41;
+  --color-primary-800: #105536;
+  --color-primary-900: #0e462d;
+  --color-primary-950: #07271a;
+
+  --color-surface-50: #f8fafc;
+  --color-surface-100: #f1f5f9;
+  --color-surface-200: #e2e8f0;
+  --color-surface-300: #cbd5e1;
+  --color-surface-400: #94a3b8;
+  --color-surface-500: #64748b;
+  --color-surface-600: #475569;
+  --color-surface-700: #334155;
+  --color-surface-800: #1e293b;
+  --color-surface-900: #0f172a;
+  --color-surface-950: #020617;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: var(--color-surface-50);
+    color: var(--color-surface-900);
+    min-height: 100svh;
+    margin: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-display);
+  }
+}
