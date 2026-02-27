@@ -70,7 +70,7 @@ export function getSportEmoji(sport: Sport): string {
  */
 export function getWhatsAppShareUrl(
   sport: string,
-  dateTime: string,
+  _dateTime: string,
   shareCode: string
 ): string {
   const gameUrl = `${window.location.origin}/game/${shareCode}`;
